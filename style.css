@@ -1,0 +1,75 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page container */
+body {
+  background: #f8f9fa;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card styling */
+.container {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Title */
+.container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #343a40;
+}
+
+/* Labels and inputs */
+form label {
+  margin-top: 15px;
+  display: block;
+  font-weight: bold;
+  color: #495057;
+}
+
+form select,
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Button */
+form button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Result display */
+#result {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: #28a745;
+}
