@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Funding Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Funding Calculator</h1>
+    <form id="fundingForm">
+      <label for="companyType">1. Company Type:</label>
+      <select id="companyType">
+        <option value="Startup">Startup</option>
+        <option value="ISV">ISV</option>
+        <option value="SMB">SMB</option>
+        <option value="Healthcare">Healthcare</option>
+      </select>
+
+      <label for="projectType">2. Project Type:</label>
+      <select id="projectType">
+        <option value="AI">Artificial Intelligence</option>
+        <option value="DataLake">Data Lake</option>
+        <option value="MLOps">MLOps</option>
+      </select>
+
+      <label for="timeline">3. Project Timeline (in months):</label>
+      <input type="number" id="timeline" min="1" placeholder="e.g., 3">
+
+      <label for="cost">4. Estimated Cost (USD):</label>
+      <input type="number" id="cost" min="0" placeholder="e.g., 5000">
+
+      <button type="button" onclick="calculateFunding()">💰 Get Funding Estimate</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+</body>
+
+</html>
